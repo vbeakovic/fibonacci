@@ -6,10 +6,10 @@ var math = require('../math');
 router.get('/', function(req, res,next) {
   if (req.query.fibonum) {
     math.fibonacci(req.query.fibonum, (err, fiboval) => {
-    res.render('fibonacci', {
-      title: "Calculate Fibonacci numbers",
-      fibonum: req.query.fibonum,
-      fiboval: math.fibonacci(req.query.fibonum)
+      res.render('fibonacci', {
+        title: "Calculate Fibonacci numbers",
+        fibonum: req.query.fibonum,
+        fiboval: fiboval
       });
     });
   } else {
