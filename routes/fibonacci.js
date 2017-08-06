@@ -14,7 +14,7 @@ router.get('/', function(req, res,next) {
   } else {
     res.render('fibonacci', {
       title: 'Calculate Fibonacci numbers',
-      fiboval: undefinded
+      fiboval: undefined
     });
   }
 });
