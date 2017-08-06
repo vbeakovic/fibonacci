@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "DEBUG=fibonacci:* node ./bin/www",
-    "server": "SERVERPORT=3002 node ./fiboserver"
+    "server": "SERVERPORT=3002 node ./fiboserver",
+    "client": "node ./fiboclient"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
