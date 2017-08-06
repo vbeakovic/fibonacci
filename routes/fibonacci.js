@@ -1,7 +1,7 @@
 const express = require('express');
 var router = express.Router();
 
-var math = require(../math);
+var math = require('../math');
 
 router.get('/', function(req, res,next) {
   if (req.query.fibonum) {
